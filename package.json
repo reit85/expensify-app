@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Andrew Mead",
   "license": "MIT",
+  "engines": {
+    "node": "9.3.0"
+  },
   "scripts": {
     "start": "node server/server.js",
     "serve": "live-server public/",
