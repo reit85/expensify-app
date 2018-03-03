@@ -14,8 +14,6 @@ exports[`should render an expenselist Item with values 1`] = `
     € 1.23
     -
     01.01.1970
-    -
-    48 years ago
   </p>
 </div>
 `;
