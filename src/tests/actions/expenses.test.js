@@ -81,6 +81,22 @@ test('should setup remove an expense action object', () => {
   })
 })
 
+test('should remove expense from firebase', (done) => {
+  const store = createMockStore({})
+  const id  = expenses[2].id
+  store.dispatch(exp.startRemoveExpense({ id })).then(() => {
+    const actions = store.getActions()
+    expect(actions[0]).toEqual({
+      type: 'REMOVE_EXPENSE',
+      id
+    })
+    return db.ref(`expenses/${id}`).once('value')
+  }).then((snapshot) => {
+    expect(snapshot.val()).toBeFalsy()
+    done()
+  })
+})
+
 test('should setup edit an expense action object', () => {
   const result = exp.editExpense('123abc', {note:'test'})
   expect(result).toEqual({
