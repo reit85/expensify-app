@@ -13,10 +13,12 @@ const config = {
 
 firebase.initializeApp(config);
 
+// Google Provider
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
 // ref = Table or collection
 const db = firebase.database()
-export {firebase, db as default}
+export {firebase, googleAuthProvider, db as default}
 
  // TEST
 // // chiled_removed event subscribe
