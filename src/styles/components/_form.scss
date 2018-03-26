@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  > * {
+    margin-bottom: $s-size;
+  }
+}
+
+.form__error {
+  margin: 0 0 $s-size 0;
+  font-style: italic;
+}
+
+.DateInput_input, .DateInput_input_1, 
+.DateInput_input__focused, .DateInput_input__focused_2 {
+  display: flex;
+}

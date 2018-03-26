@@ -1,0 +1,24 @@
+.page-filter {
+  background: #f1f1f1;
+  //margin-bottom: $l-size;
+  //padding: $s-size 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $s-size;
+  
+  @media (min-width: $desktop-breakpoint){
+    flex-direction: row;
+  }
+}
+
+.input-group__item {
+  margin-bottom: $s-size;
+
+  @media (min-width: $desktop-breakpoint){
+    margin-right: $s-size;
+  }
+
+}
