@@ -1,7 +1,15 @@
-#GIT commands
+![EXPENSIFY](https://smallbiztrends.com/wp-content/uploads/2015/11/expense-tracking-850x476.jpg)
 
-git init - create a new git repo
-git status - view the changes to the project files
-git add . - add all files to the staging area
-git commit -m <message> - creates a new commit with files from staging area
-git log - view recent commits
+# Expensify
+*Track your expenses! .. the easy way*
+
+This is a simple web app from a React course.
+The app includes the most common techniques of a modern web application:
+
+* React v16
+* Redux
+* Webpack
+* Jest
+* Babel
+* Firebase
+* and many more ...
